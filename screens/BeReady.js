@@ -5,6 +5,7 @@ import {globalStyles} from '../styles/globalStyles';
 const BeReadyScreen = ({navigation}) => { 
   return (
     <View style={globalStyles.stackNavStyle}>
+      <View>
       <Button
         title="All"
         color="#46AFFF" 
@@ -20,6 +21,8 @@ const BeReadyScreen = ({navigation}) => {
         color="#46AFFF" 
         onPress={() => navigation.navigate("Health")}
         />
+        </View>
+        <View>
         <Button
         title="Roads"
         color="#46AFFF" 
@@ -35,6 +38,7 @@ const BeReadyScreen = ({navigation}) => {
         color="#46AFFF" 
         onPress={() => navigation.navigate("Other")}
         />
+        </View>
     </View>
   )
 }
